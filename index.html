@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>club auto</title>
     <link rel="stylesheet"href="style.css">
-    <link rel="stylesheet"href="./bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet"href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <title>Club Auto</title>
 </head>
 <body>
+  <!--  
   <header id="mainheader">
     <img src="media/logo1.jpg" alt="logo1" id="logo img">
     <h1>Club Auto</h1>
+
     <nav id="mainNav">
       <ul>
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html"><i class="bi-globe"></i>Accueil</a></li>
         <li><a href="Vente.html">Vente</a></li>
         <li><a href="Location.html">Location</a></li>
         <li><a href="Contact.html">Contact</a></li>
@@ -24,7 +26,74 @@
     </nav>
      <button id="menu-toggler" type="ouvrir/et fermer le menu-toggler">
     </button>
-  </header><!--ici se termine le #mainheader-->
+   
+  </header>
+  -->
+  <div class="bg-dark">
+      <img src="media/logo1.jpg" alt="logo1" id="logo img"  height="100">
+      <span class="text-primary">Club auto</span>
+      <img src="media/icone-adresse.png" alt="icone-adresse"  height="100">
+      <img src="media/icone-telephone.png" alt="telephone"  height="100">
+      
+  </div>
+    
+
+    <ul class="nav nav-pills mb-3 bg-dark" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-accueil-tab" data-bs-toggle="pill" data-bs-target="#pills-accueil" type="button" role="tab" aria-controls="pills-accueil" aria-selected="true">Accueil</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-vente-tab" data-bs-toggle="pill" data-bs-target="#pills-vente" type="button" role="tab" aria-controls="pills-vente" aria-selected="false">vente</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-location-tab" data-bs-toggle="pill" data-bs-target="#pills-location" type="button" role="tab" aria-controls="pills-location" aria-selected="false">location</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">contact</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-accueil" role="tabpanel" aria-labelledby="pills-accueil-tab" tabindex="0">
+        
+
+      </div>
+      <div class="tab-pane fade" id="pills-vente" role="tabpanel" aria-labelledby="pills-vente-tab" tabindex="0">...</div>
+      <div class="tab-pane fade" id="pills-location" role="tabpanel" aria-labelledby="pills-location-tab" tabindex="0">...</div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <main id="page content">
+          <h1>Contacter nous</h1>
+          <form id="contact">
+              <div>
+                  <div>
+                      <label for="fname">prenom </label>
+                      <input type="text" name="fname" id="fname" requiret/>
+                  </div>
+                  <div>
+                      <label for="lname">nom</label>
+                      <input type="text" name="lname" id="lname" requiret/>
+                  </div>
+                  <div>
+                      <label for="email">email</label>
+                      <input type="email" name="email" id="email" requiret/>
+                  </div>
+                  <div>
+                      <label for="telephone">telephone</label>
+                      <input type="text" name="telephone" id="telephone"requiret/>
+                  </div>
+              </di>
+              <div>
+                  <div>
+                      <label for="message">votre message</label>
+                      <textarea name="message" id="message" requiret></textarea>
+                  </div>
+              </div>
+              <button type="submit">envoyer</button>
+          </form>
+       </main><!--ici se termine la #page content-->
+
+      </div>
+    </div>
+
      <section id="page content">
         <main id="leftcol"></main><!--ici se termine le #leftcol-->
         <aside id="rigthcol"></aside><!--ici se terminele #rightcol-->
@@ -37,6 +106,6 @@
       tempore doloribus ullam itaque, voluptas veritatis autem libero maxime
       provident, rerum inventore!</p>
     
-    <script src="https/bootstrap/"bootstrap.bundle.min.js></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
